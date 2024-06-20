@@ -1,0 +1,11 @@
+{
+  "name": "eq-chat-alyzer",
+  "version": "1.0.0",
+  "description": "a simple tool to analyze the log printout of everquest mmo",
+  "scripts": {},
+  "author": "Patrick Ortiz (github: pzychotis)",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "log-reader"
+  ]
+}
