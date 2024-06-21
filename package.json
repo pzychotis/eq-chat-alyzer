@@ -2,10 +2,23 @@
   "name": "eq-chat-alyzer",
   "version": "1.0.0",
   "description": "a simple tool to analyze the log printout of everquest mmo",
-  "scripts": {},
   "author": "Patrick Ortiz (github: pzychotis)",
   "license": "Apache-2.0",
   "workspaces": [
-    "log-reader"
-  ]
+    "log-reader",
+    "config"
+  ],
+  "devDependencies": {
+    "pm2": "^5.4.1"
+  },
+  "scripts": {
+    "start": "pm2 start ./config/ecosystem.config.js --watch",
+    "stop": "pm2 stop ./config/ecosystem.config.js",
+    "sys:threads:logs": "pm2 logs",
+    "sys:threads:list": "pm2 ps"
+  },
+  "dependencies": {
+    "text-file-follower": "^0.1.0",
+    "yargs": "^17.7.2"
+  }
 }

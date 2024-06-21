@@ -1,0 +1,6 @@
+{
+  "name": "config",
+  "main": "index.js",
+  "author": "Patrick Ortiz (github: pzychotis)",
+  "license": "Apache-2.0"
+}

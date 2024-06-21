@@ -1,7 +1,12 @@
 {
   "name": "log-reader",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./index.js"
+  },
   "author": "Patrick Ortiz (github: pzychotis)",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }
